@@ -1,0 +1,12 @@
+.logo {
+    color: #0A2756;
+    font-size: 29px;
+    font-style: normal;
+    line-height: normal;
+    &__name {
+        font-weight: 300;
+    }
+    &__year {
+        font-weight: 400;
+    }
+}

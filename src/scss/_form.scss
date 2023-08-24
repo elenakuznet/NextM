@@ -1,0 +1,105 @@
+.form {
+    padding: 139px 0 160px;
+    background: #0A2756;
+    @media (max-width: 768px) {
+        padding: 100px 0 90px;
+    }
+    @media (max-width: 560px) {
+        padding: 75px 0 112px;
+    }
+    &__title {
+        color: #FFF;
+        font-size: 60px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 140%; /* 84px */
+        margin-bottom: 61px;
+        @media (max-width: 768px) {
+            font-size: 50px;
+            margin-bottom: 60px;
+        }
+        @media (max-width: 560px) {
+            font-size: 40px;
+            margin-bottom: 80px;
+        }
+    }
+    &__container {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    &__main {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 100px;
+    }
+    &__fieldset {
+        display: flex;
+        // gap: 26px;
+        justify-content: space-between;
+        margin-bottom: 27px;
+        padding: 0;
+        border: 0;
+        @media (max-width: 560px) {
+            flex-direction: column;
+            gap: 26px;
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    &__input {
+        padding: 12px 19px 13px;
+        height: 49.931px;
+        flex-shrink: 0;
+        flex-basis: 48%;
+        @media (max-width: 768px) {
+            padding: 16px 15px;
+        }
+        
+        &::placeholder {
+            color: rgba(0, 0, 0, 0.50);
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 140%; /* 25.2px */
+        }
+    }
+    &__textarea {
+        padding: 14px 20px;
+        width: 100%;
+        height: 120.832px;
+        flex-shrink: 0;
+        // margin-bottom: 27px;
+        &::placeholder {
+            color: rgba(0, 0, 0, 0.50);
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 140%; /* 25.2px */
+        }
+        @media (max-width: 560px) {
+            margin-bottom: 110px;
+        }
+    }
+    &__submit {
+        width: 241px;
+        height: 70.902px;
+        flex-shrink: 0;
+        padding: 25px 14px 24px 14px;
+        color: #FFF;
+        text-align: center;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 140%; /* 19.6px */
+        letter-spacing: 9.38px;
+        text-transform: uppercase;
+        background: #007DFE;
+        border: 0;
+        align-self: end;
+        @media (max-width: 560px) {
+            letter-spacing: 4.2px;
+            align-self: center;
+        }
+    }
+}

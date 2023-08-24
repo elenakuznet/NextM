@@ -1,0 +1,38 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    &__email {
+        color: #FFF;
+        text-align: center;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 140%; /* 56px */
+        @media (max-width: 560px) {
+            font-size: 28px;
+        }
+    }
+    &__phone {
+        color: #FFF;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 140%;
+        margin-bottom: 27px;
+        @media (max-width: 560px) {
+            font-size: 22px;
+        }
+    }
+    &__link {
+        color: #FFF;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 140%;
+        line-height: 80%;
+        border-bottom: 1px solid #FFF;
+        // text-decoration-line: underline;
+    }
+}

@@ -1,0 +1,68 @@
+.speakers {
+    padding: 72px 0 95px;
+    background: #FFF;
+    @media (max-width: 900px) {
+        padding: 27px 0;
+    }
+    &__container {
+        position: relative;
+    }
+    &__title {
+        color: #0A2756;
+        font-size: 60px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 140%; /* 84px */
+        margin-bottom: 23px;
+        @media (max-width: 900px) {
+            font-size: 50px;
+            margin-bottom: 42px;
+        }
+        @media (max-width: 560px) {
+            font-size: 40px;
+            margin-bottom: 30px;
+        }
+    }
+    &__swiper {
+        width: 100%;
+    // width: 800px;
+    min-height: 450px;
+    @media (max-width: 900px) {
+        // width: 627px;
+        min-height: 400px;
+    }
+    }
+    &__pagination {
+        display: flex;
+        gap: 33px;
+        justify-content: center;
+    }
+}
+
+.button-left {
+    left: -68px;
+}
+
+.button-right {
+    right: -68px;
+}
+
+.button-right, .button-left {
+    position: absolute;
+    width: 27.927px;
+    height: 85px;
+    // width: 35px;
+    // height: 65px;
+    top: calc(50% - 42.5px);
+    z-index: 10;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: transparent;
+    @media (max-width: 1024px) {
+        display: none;
+    }
+}
+
