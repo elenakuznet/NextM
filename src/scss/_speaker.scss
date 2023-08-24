@@ -4,12 +4,17 @@
     background-position: center;
     width: 378.018px;
     height: 380px;
-    // min-height: 402px;
     position: relative;
     @media (max-width: 900px) {
         width: 293.858px;
-        min-height: 311.691px;
+        height: 311.691px;
         margin-bottom: 30px;
+    }
+    @media (max-width: 560px) {
+        width: 280px;
+        height: 296px;
+        background-image: url('../img/speaker-mob.png');
+        background-size: cover;
     }
     &__info {
         position: absolute;
@@ -22,6 +27,10 @@
             padding: 10px 23px;
             height: 85px;
         }
+        @media (max-width: 560px) {
+            padding: 18px 22px;
+            height: 50px;
+        }
     }
     &__name {
         color: #FFF;
@@ -33,6 +42,10 @@
         @media (max-width: 900px) {
             margin-bottom: 22px;
         }
+        @media (max-width: 560px) {
+            font-size: 17px;
+            margin-bottom: 13px;
+        }
         
     }
     &__title {
@@ -41,6 +54,9 @@
         font-style: normal;
         font-weight: 400;
         line-height: 100%;
+        @media (max-width: 560px) {
+            font-size: 14px;
+        }
     }
 }
 
